@@ -7,6 +7,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+/* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani */
 public class NotaXMLRepo extends AbstractXMLRepository<String, Nota> {
 
     /**
@@ -42,7 +43,7 @@ public class NotaXMLRepo extends AbstractXMLRepository<String, Nota> {
         return e;
     }
 
-
+    /* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani */
     /**
      * Extrage informatia despre nota dintr-un XML
      * @param element - elem XML din care ia datele notei

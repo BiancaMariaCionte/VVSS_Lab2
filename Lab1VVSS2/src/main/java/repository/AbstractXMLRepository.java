@@ -19,7 +19,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 
-
+/* La multi ani */
 public abstract class AbstractXMLRepository<ID, E extends HasID<ID>> extends AbstractCrudRepository<ID, E> implements FileRepository<ID, E> {
 
     private String filename;
@@ -35,7 +35,8 @@ public abstract class AbstractXMLRepository<ID, E extends HasID<ID>> extends Abs
         loadFromFile();
 
     }
-
+    /* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani */
+    /* La multi ani *//* La multi ani *//* La multi ani *//* La multi ani */
 
     /**
      * Incarca datele din fisier
