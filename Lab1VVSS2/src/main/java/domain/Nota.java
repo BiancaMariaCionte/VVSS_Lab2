@@ -5,11 +5,11 @@ import repository.HasID;
 import java.time.LocalDate;
 
 public class Nota implements HasID<String> {
-    private String id;
-    private String idStudent;
-    private String idTema;
-    private double nota;
-    private LocalDate data;
+    private String id; // id-ul notei
+    private String idStudent; // id-ul studentului
+    private String idTema; // id-ul temei
+    private double nota; // valoarea notei
+    private LocalDate data; // data in care a fost predata tema
 
     /**
      * Class Constructor
@@ -26,6 +26,7 @@ public class Nota implements HasID<String> {
         this.nota = nota;
         this.data = data;
     }
+    //public Nota implementare
 
     /**
      * @return id-ul studentului
