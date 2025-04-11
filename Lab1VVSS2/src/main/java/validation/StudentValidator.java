@@ -15,6 +15,14 @@ public class StudentValidator implements Validator<Student> {
             throw new ValidationException("Id incorect!");
         }
         if(entity.getID() == null){
+            throw new NullPointerException("Id incorect!");
+        }
+        try {
+            int id = Integer.parseInt(entity.getID());
+            if (id < 0 || id > 9999) {
+                throw new ValidationException("Id incorect!");
+            }
+        } catch (NumberFormatException e) {
             throw new ValidationException("Id incorect!");
         }
         if(entity.getNume() == ""){
@@ -30,6 +38,15 @@ public class StudentValidator implements Validator<Student> {
             throw new ValidationException("Nume incorect!");
         }
         if(entity.getEmail().equals("")){
+            throw new ValidationException("Email incorect!");
+        }
+        // Group validation
+        int group = entity.getGrupa();
+        boolean inValidGroupRange = (group >= 821 && group <= 822) || (group >= 921 && group <= 927);
+        if (!inValidGroupRange) {
+            throw new ValidationException("Grupa incorecta!");
+        }
+        if (!entity.getEmail().endsWith("@gmail.com") || entity.getEmail().startsWith("@gmail.com")) {
             throw new ValidationException("Email incorect!");
         }
     }
